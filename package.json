@@ -1,13 +1,20 @@
 {
+  "homepage": "http://maicazapanta.github.io/projects",
   "name": "projects",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "antd": "^3.23.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
+    "react-confetti": "^4.0.1",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
